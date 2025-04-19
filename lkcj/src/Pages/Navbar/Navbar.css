@@ -1,0 +1,57 @@
+/* .navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar-c {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 0;
+}
+
+.navbar-c:hover {
+    background-color: #575757;
+    border-radius: 4px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    align-items: center; /* Vertically center the links */
+    background-color: #1f242d;
+    padding: 35px;
+    position: relative;
+    height: 30px;
+
+    /* Ensure positioning works */
+}
+
+.navbar-c {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    margin-right: 10px;
+    margin-top: 10px; /* Remove any margins */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-c:hover {
+    color: #00f870;
+}
+.navbar-logo-container {
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 24px;
+    margin-left: 60px;
+}
