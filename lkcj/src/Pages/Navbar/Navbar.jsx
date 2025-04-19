@@ -10,9 +10,9 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-logo-container">
-                <h1 href="/" className="navbar-logo">
-                    LKCJ
-                </h1>
+                <a href="/" className="navbar-logo">
+                    LKCJ.
+                </a>
             </div>
             <div>
                 <a href="/" className="navbar-c">
@@ -22,7 +22,7 @@ export default function Navbar() {
                     About
                 </a>
                 <a href="/Contac" className="navbar-c">
-                    Contac
+                    Contact
                 </a>
                 <a href="/Blog" className="navbar-c">
                     Blog

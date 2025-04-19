@@ -11,51 +11,108 @@
 }
 
 :root {
-    --bg-color: #1b2435;
+    --bg-color: #18202e;
     --second-bg-color: #323946;
     --second-bg-color: #323946;
     --main-color: #00f870;
     --white-color: #fff;
     --disabled-color: #fff3;
 }
+@keyframes background-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .section {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 1rem 0% 1rem;
-    background: var(--bg-color);
+    background: linear-gradient(270deg, #18202e, #0e3041, #18202e);
+    background-size: 400% 400%; /* Makes the gradient larger for smooth animation */
+    animation: background-animation 10s ease infinite; /* Apply the animation */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
+.bottom-section {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Adjusted height for better responsiveness */
+    background: linear-gradient(180deg, #18202e, #0e3041); /* Gradient background */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: var(--white-color); /* Text color */
+    font-size: 1.2rem; /* Slightly larger font size */
+    padding: 400px; /* Added padding for spacing */
+    border-top: 3px solid var(--main-color); /* Slightly thicker top border */
+    box-shadow: 0 -4px 6px #18202e; /* Optional shadow for depth */
+}
+
+.bottom-text p {
+    font-size: 1rem;
+    color: var(--white-color);
+    margin-top: -0px; /* Remove all margins */
+    padding: 0.5rem 1rem; /* Adjust padding for spacing */
+    border: 1px solid var(--main-color); /* Adds a 2px solid border with the main color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255); /* Adds a shadow */
+    position: relative; /* Ensure positioning can be adjusted */
+    top: 0;
+    margin-left: 0px; /* Reset any previous upward movement */
+}
+
+.custom-line {
+    width: 2px; /* Thickness of the line */
+    height: 600px; /* Height of the line */
+    background-color: var(--main-color); /* Line color */
+    margin-left: -0px; /* Center the line and add spacing */
+}
+.bottom-align {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Add spacing inside the container */
+}
 .home-detail {
     margin-top: 0; /* Removes any default top margin */
     padding-top: 0;
     margin-left: 50px;
     margin-right: 50px;
+    border-radius: 10px;
+    /* border-color: #00f870; */
+
     /* Removes any padding if applied */
 }
-
 .home-detail h1 {
-    font-size: clamp(0.8rem, 7vw, 4rem);
+    font-size: clamp(0.8rem, 3vw, 4rem);
     color: var(--white-color);
-    margin-top: 5px; /* Moves the text down */
+    margin-top: 10px; /* Moves the text down */
     margin-left: 0px;
 }
 
 .home-detail h2 {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     color: var(--white-color);
     margin-top: -1rem;
+    padding: 8px;
 }
 
 .home-detail h2 span {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: 0.07rem var(--main-color);
+    -webkit-text-stroke: 0.05rem var(--main-color);
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -90,9 +147,13 @@
 }
 
 .home-detail p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: var(--white-color);
-    margin: 1rem 0 2.5rem;
+    margin: 1rem 0 2.5rem 0;
+    border: 1px solid var(--main-color); /* Adds a 2px solid border with the main color */
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255); /* Adds a shadow */
 }
 
 .btn-sci {
@@ -102,11 +163,11 @@
 
 .btn {
     display: inline-block;
-    padding: 1rem 3rem;
+    padding: 0.6rem;
     background: var(--main-color);
-    border: 0.2rem solid var(--main-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 2rem;
+    font-size: 0.8rem;
     color: var(--bg-color);
     font-weight: 500;
     transition: 0.5s;
@@ -127,10 +188,10 @@
 
 .sci a {
     display: inline-flex;
-    padding: 0.8rem;
-    border: 0.2rem solid var(--main-color);
+    padding: 0.5rem;
+    border: 0.1rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--main-color);
     transition: 0.5s;
     text-decoration: none;
