@@ -27,3 +27,7 @@ export default function Navbar() {
                 <a href="/Blog" className="navbar-c">
                     Blog
                 </a>
+            </div>
+        </div>
+    );
+}

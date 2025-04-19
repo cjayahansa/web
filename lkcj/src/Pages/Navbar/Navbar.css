@@ -54,4 +54,10 @@
     color: white;
     font-size: 24px;
     margin-left: 60px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar-logo:hover {
+    color: #00f870;
+    font-size: large;
 }
