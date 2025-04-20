@@ -7,7 +7,6 @@ import "./Home.css";
 export default function Home() {
     return (
         <div>
-            <Navbar />
             <div className="section">
                 <div className="home-detail">
                     <h1>CHAMINDU JAYAHANSA</h1>

@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center; /* Center items horizontally */ /* Center items vertically */
+    height: 100vh;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.about h1 {
+    position: relative;
+    margin: 0;
+    font-size: 2rem;
+
+    white-space: nowrap;
+    /* Space below the heading */
+}
+.about p {
+    font-size: 1rem;
+
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Optional: Add a softer text color */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin: 10px; /* Reset default margins */
+}
+.about p:hover {
+    color: #ffffff;
+}

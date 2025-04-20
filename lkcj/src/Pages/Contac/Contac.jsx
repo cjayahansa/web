@@ -28,7 +28,6 @@ export default function Contac() {
     };
     return (
         <>
-            <Navbar />
             <div class="container">
                 <form onSubmit={onSubmit}>
                     <h2>Contact Form</h2>
